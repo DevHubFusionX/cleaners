@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
+import Logo from './Header/Logo';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -19,11 +21,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-white/10">
                     {/* Column 1: Company Info */}
                     <div className="lg:col-span-4 max-w-sm">
-                        <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
-                            <div className="w-34 h-24 flex items-center justify-center p-1 group-hover:scale-110 transition-transform duration-300 bg-white rounded-md">
-                                <img src={logoImg} alt="Comtranz Logo" className="w-full h-full object-contain" />
-                            </div>
-
+                        <Link to="/" className="inline-flex items-center gap-3 mb-6 bg-white rounded-xl p-1 w-fit shadow-sm group">
+                            <Logo />
                         </Link>
                         <p className="text-gray-400 mb-8 leading-relaxed">
                             Ensuring safe, functional, and well-maintained building environments for residential, commercial, and institutional clients since 2018.

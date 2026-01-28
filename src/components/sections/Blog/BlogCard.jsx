@@ -7,7 +7,7 @@ const BlogCard = ({ post, image, index }) => {
         <article
             className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
             data-aos="fade-up"
-            data-aos-delay={index * 100}
+            data-aos-delay={(index * 100).toString()}
         >
             {/* Image */}
             <div className="relative h-64 overflow-hidden">

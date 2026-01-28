@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, Phone, Mail, ArrowRight, Shield, Tool, Clock } from 'lucide-react';
+import { CheckCircle2, Phone, Mail, ArrowRight, Shield, Wrench, Clock } from 'lucide-react';
 import bgImage from '../../assets/comtranz/image2.avif';
 
 const FacilityMaintenance = () => {
@@ -57,7 +57,7 @@ const FacilityMaintenance = () => {
                                 <h4 className="font-bold text-[#1a365d]">Safety First</h4>
                             </div>
                             <div className="bg-gray-50 p-8 rounded-3xl text-center shadow-sm">
-                                <Tool className="w-12 h-12 text-[#1a365d] mx-auto mb-4" />
+                                <Wrench className="w-12 h-12 text-[#1a365d] mx-auto mb-4" />
                                 <h4 className="font-bold text-[#1a365d]">Expert Tools</h4>
                             </div>
                             <div className="bg-gray-50 p-8 rounded-3xl text-center shadow-sm">

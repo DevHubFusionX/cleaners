@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { X, Home, Info, Hammer, BookOpen, Mail, Phone, ArrowRight, Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
 import Logo from './Logo';
 

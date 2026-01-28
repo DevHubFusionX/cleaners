@@ -6,8 +6,8 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import FacilityMaintenance from './pages/Services/FacilityMaintenance';
-import CleaningJanitorial from './pages/Services/CleaningJanitorial';
+import ServiceDetail from './pages/Services/ServiceDetail';
+import BlogDetail from './pages/BlogDetail';
 import './App.css';
 
 function App() {
@@ -20,10 +20,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/services/facility-maintenance" element={<FacilityMaintenance />} />
-            <Route path="/services/cleaning-janitorial" element={<CleaningJanitorial />} />
           </Routes>
         </main>
         <Footer />

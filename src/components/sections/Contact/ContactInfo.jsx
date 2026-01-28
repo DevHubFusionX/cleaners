@@ -47,7 +47,7 @@ const ContactInfo = () => {
                             key={index}
                             className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group text-center"
                             data-aos="fade-up"
-                            data-aos-delay={index * 100}
+                            data-aos-delay={(index * 100).toString()}
                         >
                             <div className={`w-16 h-16 ${item.bg} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                 <item.icon className={`w-8 h-8 ${item.color}`} />

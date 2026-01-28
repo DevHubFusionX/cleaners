@@ -100,7 +100,7 @@ const ValuesGrid = () => {
                                 key={index}
                                 className="group relative flex flex-col md:flex-row gap-5 p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-[#f6d274]/30 hover:shadow-lg transition-all duration-300"
                                 data-aos="fade-up"
-                                data-aos-delay={index * 50}
+                                data-aos-delay={(index * 50).toString()}
                             >
                                 {/* Icon Container */}
                                 <div className={`w-14 h-14 rounded-xl ${v.bg} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
