@@ -49,10 +49,10 @@ const PricingCard = ({ plan }) => {
 
             {/* CTA Button */}
             <Link
-                to="/pricing"
+                to="/contact"
                 className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider transition-all duration-300 ${plan.popular
-                        ? 'bg-[#f6d274] hover:bg-[#e5c163] text-black shadow-lg hover:shadow-xl'
-                        : 'bg-[#1a365d] hover:bg-[#2d4a7c] text-white'
+                    ? 'bg-[#f6d274] hover:bg-[#e5c163] text-black shadow-lg hover:shadow-xl'
+                    : 'bg-[#1a365d] hover:bg-[#2d4a7c] text-white'
                     }`}
             >
                 Get Started

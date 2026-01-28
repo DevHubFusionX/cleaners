@@ -122,10 +122,14 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                 ))}
                             </div>
 
-                            <button className="w-full bg-[#1a365d] text-white px-6 py-4 rounded-2xl font-black text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-[#1a365d]/20 active:scale-95">
+                            <Link
+                                to="/contact"
+                                onClick={onClose}
+                                className="w-full bg-[#1a365d] text-white px-6 py-4 rounded-2xl font-black text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-[#1a365d]/20 active:scale-95"
+                            >
                                 Request a Quote
                                 <ArrowRight className="h-4 w-4 text-[#f6d274]" />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

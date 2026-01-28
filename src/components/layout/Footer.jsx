@@ -18,7 +18,7 @@ const Footer = () => {
                             <div className="w-34 h-24 flex items-center justify-center p-1 group-hover:scale-110 transition-transform duration-300 bg-white rounded-md">
                                 <img src={logoImg} alt="Comtranz Logo" className="w-full h-full object-contain" />
                             </div>
-                          
+
                         </Link>
                         <p className="text-gray-400 mb-8 leading-relaxed">
                             Ensuring safe, functional, and well-maintained building environments for residential, commercial, and institutional clients since 2018.
@@ -56,11 +56,17 @@ const Footer = () => {
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#f6d274] rounded-full"></span>
                         </h4>
                         <ul className="space-y-4">
-                            {['Home', 'About Us', 'Services', 'Contact Us'].map((item) => (
-                                <li key={item}>
-                                    <Link to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center gap-2 group">
+                            {[
+                                { name: 'Home', path: '/' },
+                                { name: 'About Us', path: '/about' },
+                                { name: 'Services', path: '/services' },
+                                { name: 'Contact Us', path: '/contact' },
+                                { name: 'Blog', path: '/blog' }
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link to={item.path} className="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center gap-2 group">
                                         <span className="w-1.5 h-1.5 rounded-full bg-[#f6d274] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
