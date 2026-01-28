@@ -1,9 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logoImg from '../../assets/comtranz/logo.png';
+import { Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    const socialLinks = [
+        { name: 'Facebook', url: '#', icon: Facebook },
+        { name: 'Twitter', url: '#', icon: Twitter },
+        { name: 'Instagram', url: '#', icon: Instagram },
+        { name: 'LinkedIn', url: '#', icon: Linkedin },
+    ];
 
     return (
         <footer className="bg-[#1a365d] pt-20 text-white relative overflow-hidden">
@@ -103,21 +108,19 @@ const Footer = () => {
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm focus:outline-none focus:border-[#f6d274] transition-colors"
                                 />
                                 <button className="absolute right-2 top-2 bottom-2 bg-[#f6d274] hover:bg-[#e5c163] text-[#1a365d] rounded-lg px-4 flex items-center justify-center transition-colors">
-                                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <Send className="w-5 h-5" />
                                 </button>
                             </div>
                         </form>
                         <div className="flex gap-4">
-                            {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
+                            {socialLinks.map((social) => (
                                 <a
-                                    key={social}
-                                    href="#"
-                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#f6d274] hover:text-[#1a365d] hover:-translate-y-1 transition-all duration-300"
+                                    key={social.name}
+                                    href={social.url}
+                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#f6d274] hover:text-[#1a365d] hover:-translate-y-1 transition-all duration-300 group"
                                 >
-                                    <span className="sr-only">{social}</span>
-                                    <i className={`fab fa-${social === 'twitter' ? 'x-twitter' : social}`}></i>
+                                    <span className="sr-only">{social.name}</span>
+                                    <social.icon className="w-5 h-5 opacity-70 group-hover:opacity-100" />
                                 </a>
                             ))}
                         </div>
