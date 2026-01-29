@@ -5,7 +5,6 @@ import About from '../components/sections/About';
 import Services from '../components/sections/Services';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
 import VideoSection from '../components/sections/VideoSection';
-import Pricing from '../components/sections/Pricing';
 import Testimonials from '../components/sections/Testimonials';
 import FAQ from '../components/sections/FAQ';
 
@@ -18,7 +17,7 @@ const Home = () => {
                 <Services />
                 <WhyChooseUs />
                 <VideoSection />
-                <Pricing />
+                
                 <Testimonials />
                 <FAQ />
                 {/* Additional sections will go here */}
