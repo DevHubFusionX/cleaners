@@ -22,7 +22,7 @@ const VideoSection = () => {
                                 />
 
                                 {/* Overlay */}
-                                <div className="absolute inset-0 bg-[#065f46]/40 group-hover:bg-[#065f46]/50 transition-colors duration-300"></div>
+                                <div className="absolute inset-0 bg-[#315347]/40 group-hover:bg-[#315347]/50 transition-colors duration-300"></div>
 
                                 {/* Play Button */}
                                 <button
@@ -33,7 +33,7 @@ const VideoSection = () => {
                                         {/* Pulse animation */}
                                         <div className="absolute inset-0 bg-[#f6d274] rounded-full animate-ping opacity-25"></div>
                                         <div className="relative w-20 h-20 md:w-24 md:h-24 bg-[#f6d274] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300">
-                                            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#065f46] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#315347] ml-1" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M8 5v14l11-7z" />
                                             </svg>
                                         </div>
@@ -72,7 +72,7 @@ const VideoSection = () => {
 
                     {/* Decorative elements */}
                     <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#f6d274] rounded-2xl -z-10"></div>
-                    <div className="absolute -top-6 -right-6 w-32 h-32 border-4 border-[#065f46]/20 rounded-2xl -z-10"></div>
+                    <div className="absolute -top-6 -right-6 w-32 h-32 border-4 border-[#315347]/20 rounded-2xl -z-10"></div>
                 </div>
             </div>
         </section>

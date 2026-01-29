@@ -16,10 +16,10 @@ const Blog = () => {
             {/* Newsletter CTA Section */}
             <section className="py-20 lg:py-28 bg-white">
                 <div className="container mx-auto px-4 lg:px-8">
-                    <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#065f46] to-[#064e3b] rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+                    <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#315347] to-[#064e3b] rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
                         <div className="relative z-10">
                             <div className="w-16 h-16 bg-[#f6d274] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Mail className="w-8 h-8 text-[#065f46]" />
+                                <Mail className="w-8 h-8 text-[#315347]" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-black text-white mb-4" data-aos="fade-up">
                                 Stay Updated with Our Newsletter
@@ -38,7 +38,7 @@ const Blog = () => {
                                     />
                                     <button
                                         type="submit"
-                                        className="px-8 py-4 bg-[#f6d274] text-[#065f46] rounded-xl font-bold hover:bg-[#e5c163] transition-colors duration-300 whitespace-nowrap"
+                                        className="px-8 py-4 bg-[#f6d274] text-[#315347] rounded-xl font-bold hover:bg-[#e5c163] transition-colors duration-300 whitespace-nowrap"
                                     >
                                         Subscribe
                                     </button>

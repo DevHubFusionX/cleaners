@@ -36,7 +36,7 @@ const AboutImages = () => {
             </div>
 
             {/* Experience Badge */}
-            <div className="absolute bottom-4 left-4 lg:-left-6 z-30 bg-[#065f46] text-white rounded-2xl p-5 shadow-2xl">
+            <div className="absolute bottom-4 left-4 lg:-left-6 z-30 bg-[#315347] text-white rounded-2xl p-5 shadow-2xl">
                 <div className="flex items-center gap-3">
                     <div className="w-14 h-14 rounded-xl bg-[#f6d274]/20 flex items-center justify-center">
                         <svg className="w-7 h-7 text-[#f6d274]" fill="none" viewBox="0 0 24 24" stroke="currentColor">

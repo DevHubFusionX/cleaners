@@ -52,7 +52,7 @@ const ContactInfo = () => {
                             <div className={`w-16 h-16 ${item.bg} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                 <item.icon className={`w-8 h-8 ${item.color}`} />
                             </div>
-                            <h3 className="text-xl font-bold text-[#065f46] mb-3">{item.title}</h3>
+                            <h3 className="text-xl font-bold text-[#315347] mb-3">{item.title}</h3>
                             {item.link ? (
                                 <a
                                     href={item.link}

@@ -28,7 +28,7 @@ const AboutMain = () => {
                             </div>
 
                             {/* Overlapping Info Box */}
-                            <div className="absolute -bottom-8 -right-4 md:-right-8 bg-[#065f46] p-6 md:p-8 rounded-3xl shadow-2xl z-20 max-w-[240px]">
+                            <div className="absolute -bottom-8 -right-4 md:-right-8 bg-[#315347] p-6 md:p-8 rounded-3xl shadow-2xl z-20 max-w-[240px]">
                                 <div className="flex items-baseline gap-2 mb-2">
                                     <div className="text-5xl font-black text-[#f6d274]">7</div>
                                     <div className="text-2xl font-bold text-[#f6d274]">+</div>
@@ -46,16 +46,16 @@ const AboutMain = () => {
                             <span className="w-8 h-0.5 bg-[#f6d274]"></span>
                             Who We Are
                         </p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#315347] leading-tight mb-6">
                             Nigeria's Trusted Facility Management Partner
                         </h2>
 
                         <div className="space-y-5 text-gray-600 text-base md:text-lg leading-relaxed mb-8">
                             <p>
-                                <strong className="text-[#065f46]">{companyInfo.name}</strong> is a Nigerian-registered company ({companyInfo.rcNumber}) that has been delivering excellence in facility management since {companyInfo.established}.
+                                <strong className="text-[#315347]">{companyInfo.name}</strong> is a Nigerian-registered company ({companyInfo.rcNumber}) that has been delivering excellence in facility management since {companyInfo.established}.
                             </p>
                             <p>
-                                Founded by <strong className="text-[#065f46]">{companyInfo.founder}</strong>, we specialize in providing integrated facility management solutions that ensure your properties remain safe, functional, and well-maintained.
+                                Founded by <strong className="text-[#315347]">{companyInfo.founder}</strong>, we specialize in providing integrated facility management solutions that ensure your properties remain safe, functional, and well-maintained.
                             </p>
                         </div>
 
@@ -73,12 +73,12 @@ const AboutMain = () => {
                         <div className="flex flex-wrap gap-8 pt-6 border-t border-gray-200">
                             <div>
                                 <div className="text-sm text-gray-500 mb-1">Established</div>
-                                <div className="text-2xl font-black text-[#065f46]">{companyInfo.established}</div>
+                                <div className="text-2xl font-black text-[#315347]">{companyInfo.established}</div>
                             </div>
                             <div className="h-12 w-px bg-gray-200"></div>
                             <div>
                                 <div className="text-sm text-gray-500 mb-1">Location</div>
-                                <div className="text-2xl font-black text-[#065f46]">Lagos, NG</div>
+                                <div className="text-2xl font-black text-[#315347]">Lagos, NG</div>
                             </div>
                         </div>
                     </div>

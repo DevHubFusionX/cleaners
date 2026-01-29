@@ -22,7 +22,7 @@ const Header = () => {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="lg:hidden p-2 text-[#065f46] hover:bg-gray-100 rounded-lg transition-colors"
+                    className="lg:hidden p-2 text-[#315347] hover:bg-gray-100 rounded-lg transition-colors"
                     onClick={() => setIsMobileMenuOpen(true)}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

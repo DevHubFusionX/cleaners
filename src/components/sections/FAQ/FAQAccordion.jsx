@@ -19,11 +19,11 @@ const FAQAccordion = ({ faqs }) => {
                             onClick={() => setActiveIndex(isActive ? -1 : index)}
                             className="w-full text-left px-6 py-5 flex items-center justify-between gap-4"
                         >
-                            <span className={`font-bold text-lg transition-colors duration-300 ${isActive ? 'text-[#065f46]' : 'text-gray-700'
+                            <span className={`font-bold text-lg transition-colors duration-300 ${isActive ? 'text-[#315347]' : 'text-gray-700'
                                 }`}>
                                 {faq.question}
                             </span>
-                            <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isActive ? 'bg-[#065f46] text-[#f6d274]' : 'bg-gray-200 text-gray-500'
+                            <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isActive ? 'bg-[#315347] text-[#f6d274]' : 'bg-gray-200 text-gray-500'
                                 }`}>
                                 <svg
                                     className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}

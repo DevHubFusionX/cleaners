@@ -71,8 +71,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                         onClick={onClose}
                                         className={({ isActive }) =>
                                             `flex items-center justify-between px-5 py-4 rounded-2xl text-sm font-bold transition-all duration-300 ${isActive
-                                                ? 'bg-[#065f46] text-white shadow-xl translate-x-1'
-                                                : 'text-[#065f46] hover:bg-gray-100'
+                                                ? 'bg-[#315347] text-white shadow-xl translate-x-1'
+                                                : 'text-[#315347] hover:bg-gray-100'
                                             }`
                                         }
                                     >
@@ -93,13 +93,13 @@ const MobileMenu = ({ isOpen, onClose }) => {
                         <div className="mb-6">
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-4 block">Our Details</span>
                             <div className="space-y-4">
-                                <a href="tel:+2348038102340" className="flex items-center gap-3 text-sm font-bold text-[#065f46] hover:text-[#f6d274] transition-colors">
+                                <a href="tel:+2348038102340" className="flex items-center gap-3 text-sm font-bold text-[#315347] hover:text-[#f6d274] transition-colors">
                                     <div className="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center">
                                         <Phone className="w-5 h-5 text-[#f6d274]" />
                                     </div>
                                     +234 803 810 2340
                                 </a>
-                                <a href="mailto:info@comtranzglobal.com" className="flex items-center gap-3 text-sm font-bold text-[#065f46] hover:text-[#f6d274] transition-colors">
+                                <a href="mailto:info@comtranzglobal.com" className="flex items-center gap-3 text-sm font-bold text-[#315347] hover:text-[#f6d274] transition-colors">
                                     <div className="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center">
                                         <Mail className="w-5 h-5 text-[#f6d274]" />
                                     </div>
@@ -115,7 +115,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                     <a
                                         key={social.name}
                                         href={social.url}
-                                        className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 hover:bg-[#065f46] hover:text-white transition-all duration-300"
+                                        className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 hover:bg-[#315347] hover:text-white transition-all duration-300"
                                     >
                                         <social.icon className="w-5 h-5" />
                                     </a>
@@ -125,7 +125,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             <Link
                                 to="/contact"
                                 onClick={onClose}
-                                className="w-full bg-[#065f46] text-white px-6 py-4 rounded-2xl font-black text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-[#065f46]/20 active:scale-95"
+                                className="w-full bg-[#315347] text-white px-6 py-4 rounded-2xl font-black text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-[#315347]/20 active:scale-95"
                             >
                                 Request a Quote
                                 <ArrowRight className="h-4 w-4 text-[#f6d274]" />

@@ -61,11 +61,11 @@ const ValuesGrid = () => {
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
                     {/* Left Side: Header & Image */}
                     <div className="lg:w-2/5 lg:sticky lg:top-24 h-fit" data-aos="fade-right">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#f6d274]/10 border border-[#f6d274]/20 text-[#065f46] font-bold text-xs uppercase tracking-widest mb-5">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#f6d274]/10 border border-[#f6d274]/20 text-[#315347] font-bold text-xs uppercase tracking-widest mb-5">
                             <span className="w-2 h-2 rounded-full bg-[#f6d274] animate-pulse"></span>
                             Our Core Values
                         </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-5">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#315347] leading-tight mb-5">
                             The Core Principles That Drive Us
                         </h2>
                         <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
@@ -82,7 +82,7 @@ const ValuesGrid = () => {
                         </div>
 
                         {/* Stats Badge */}
-                        <div className="p-6 rounded-2xl bg-gradient-to-br from-[#065f46] to-[#064e3b] text-white relative overflow-hidden">
+                        <div className="p-6 rounded-2xl bg-gradient-to-br from-[#315347] to-[#064e3b] text-white relative overflow-hidden">
                             <div className="relative z-10">
                                 <div className="text-4xl font-black text-[#f6d274] mb-2">100%</div>
                                 <p className="text-sm font-medium text-gray-300 leading-relaxed">
@@ -110,7 +110,7 @@ const ValuesGrid = () => {
                                 {/* Content */}
                                 <div className="flex-grow">
                                     <div className="flex items-center gap-3 mb-2">
-                                        <h4 className="text-lg md:text-xl font-black text-[#065f46]">
+                                        <h4 className="text-lg md:text-xl font-black text-[#315347]">
                                             {v.title}
                                         </h4>
                                         <div className="h-px flex-grow bg-gray-100 hidden md:block"></div>

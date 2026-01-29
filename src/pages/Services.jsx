@@ -15,7 +15,7 @@ const Services = () => {
             <ServicesGrid />
 
             {/* CTA Section */}
-            <section className="py-20 lg:py-28 bg-[#065f46] relative overflow-hidden">
+            <section className="py-20 lg:py-28 bg-[#315347] relative overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight" data-aos="fade-up">
@@ -28,7 +28,7 @@ const Services = () => {
                         <div className="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
                             <Link
                                 to="/contact"
-                                className="inline-flex items-center gap-2 px-10 py-5 bg-[#f6d274] text-[#065f46] rounded-2xl font-bold text-lg hover:bg-[#e5c163] hover:scale-105 transition-all duration-300 shadow-xl"
+                                className="inline-flex items-center gap-2 px-10 py-5 bg-[#f6d274] text-[#315347] rounded-2xl font-bold text-lg hover:bg-[#e5c163] hover:scale-105 transition-all duration-300 shadow-xl"
                             >
                                 <Mail className="w-5 h-5" />
                                 Request a Quote

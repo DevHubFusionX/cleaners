@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
                     alt="Facility Management"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#065f46]/90"></div>
+                <div className="absolute inset-0 bg-[#315347]/90"></div>
             </div>
 
             {/* Decorative blur elements */}

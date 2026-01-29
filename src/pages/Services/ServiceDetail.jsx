@@ -32,7 +32,7 @@ const ServiceDetail = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* Header / Hero */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-[#065f46] overflow-hidden text-center text-white">
+            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-[#315347] overflow-hidden text-center text-white">
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <nav className="flex justify-center items-center gap-2 text-sm font-medium text-gray-400 mb-6" data-aos="fade-up">
                         <Link to="/" className="hover:text-[#f6d274] transition-colors">Home</Link>
@@ -57,11 +57,11 @@ const ServiceDetail = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             {/* Left: Content */}
                             <div className="md:col-span-2" data-aos="fade-right">
-                                <h2 className="text-3xl font-black text-[#065f46] mb-6">Overview</h2>
+                                <h2 className="text-3xl font-black text-[#315347] mb-6">Overview</h2>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
                                     Our {service.title} provides specialized solutions tailored to your specific requirements. We pride ourselves on delivering high-quality, reliable, and cost-effective services across Nigeria.
                                 </p>
-                                <h3 className="text-xl font-bold text-[#065f46] mb-4">Key Features</h3>
+                                <h3 className="text-xl font-bold text-[#315347] mb-4">Key Features</h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     {service.items.map((item, index) => (
                                         <div key={index} className="flex items-center gap-3 p-4 bg-gray-50 rounded-2xl">
@@ -74,16 +74,16 @@ const ServiceDetail = () => {
 
                             {/* Right: Sidebar CTA */}
                             <div className="md:col-span-1" data-aos="fade-left">
-                                <div className="bg-[#065f46] p-8 rounded-3xl text-white sticky top-24">
+                                <div className="bg-[#315347] p-8 rounded-3xl text-white sticky top-24">
                                     <div className="w-12 h-12 bg-[#f6d274] rounded-xl flex items-center justify-center mb-6">
-                                        <Icon className="w-6 h-6 text-[#065f46]" />
+                                        <Icon className="w-6 h-6 text-[#315347]" />
                                     </div>
                                     <h3 className="text-xl font-bold mb-4">Ready to start?</h3>
                                     <p className="text-gray-300 text-sm mb-8 last:mb-0">
                                         Get a personalized quote for your facility today. Our team is ready to assist you.
                                     </p>
                                     <div className="space-y-4">
-                                        <Link to="/contact" className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#f6d274] text-[#065f46] rounded-xl font-bold hover:bg-[#e5c163] transition-all duration-300">
+                                        <Link to="/contact" className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#f6d274] text-[#315347] rounded-xl font-bold hover:bg-[#e5c163] transition-all duration-300">
                                             <Mail className="w-5 h-5" />
                                             Get Quote
                                         </Link>

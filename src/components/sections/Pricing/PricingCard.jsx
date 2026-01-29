@@ -14,19 +14,19 @@ const PricingCard = ({ plan }) => {
             )}
 
             {/* Plan Icon */}
-            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${plan.popular ? 'bg-[#065f46]' : 'bg-[#f6d274]/20'}`}>
-                <svg className={`w-8 h-8 ${plan.popular ? 'text-[#f6d274]' : 'text-[#065f46]'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${plan.popular ? 'bg-[#315347]' : 'bg-[#f6d274]/20'}`}>
+                <svg className={`w-8 h-8 ${plan.popular ? 'text-[#f6d274]' : 'text-[#315347]'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
             </div>
 
             {/* Plan Name */}
-            <h3 className="text-xl font-bold text-[#065f46] mb-2">{plan.name}</h3>
+            <h3 className="text-xl font-bold text-[#315347] mb-2">{plan.name}</h3>
 
             {/* Price */}
             <div className="flex items-baseline mb-4">
-                <span className="text-2xl font-bold text-[#065f46]">$</span>
-                <span className="text-5xl font-black text-[#065f46]">{plan.price}</span>
+                <span className="text-2xl font-bold text-[#315347]">$</span>
+                <span className="text-5xl font-black text-[#315347]">{plan.price}</span>
                 <span className="text-gray-500 ml-2">/month</span>
             </div>
 
@@ -37,8 +37,8 @@ const PricingCard = ({ plan }) => {
             <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                        <div className="w-5 h-5 rounded-full bg-[#065f46]/10 flex items-center justify-center flex-shrink-0">
-                            <svg className="w-3 h-3 text-[#065f46]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-5 h-5 rounded-full bg-[#315347]/10 flex items-center justify-center flex-shrink-0">
+                            <svg className="w-3 h-3 text-[#315347]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                         </div>
@@ -52,7 +52,7 @@ const PricingCard = ({ plan }) => {
                 to="/contact"
                 className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider transition-all duration-300 ${plan.popular
                     ? 'bg-[#f6d274] hover:bg-[#e5c163] text-black shadow-lg hover:shadow-xl'
-                    : 'bg-[#065f46] hover:bg-[#064e3b] text-white'
+                    : 'bg-[#315347] hover:bg-[#064e3b] text-white'
                     }`}
             >
                 Get Started
