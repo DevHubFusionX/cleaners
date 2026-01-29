@@ -20,7 +20,7 @@ const BlogCard = ({ post, image, index }) => {
 
                 {/* Category Badge */}
                 <div className="absolute top-6 left-6">
-                    <span className="px-4 py-2 bg-[#f6d274] text-[#1a365d] rounded-full text-xs font-bold uppercase tracking-wider">
+                    <span className="px-4 py-2 bg-[#f6d274] text-[#065f46] rounded-full text-xs font-bold uppercase tracking-wider">
                         {post.category}
                     </span>
                 </div>
@@ -41,7 +41,7 @@ const BlogCard = ({ post, image, index }) => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-black text-[#1a365d] mb-3 group-hover:text-[#f6d274] transition-colors duration-300 line-clamp-2">
+                <h3 className="text-2xl font-black text-[#065f46] mb-3 group-hover:text-[#f6d274] transition-colors duration-300 line-clamp-2">
                     {post.title}
                 </h3>
 
@@ -53,7 +53,7 @@ const BlogCard = ({ post, image, index }) => {
                 {/* Read More Button */}
                 <Link
                     to={`/blog/${post.id}`}
-                    className="inline-flex items-center gap-2 text-[#1a365d] font-bold hover:text-[#f6d274] transition-colors duration-300 group-hover:gap-3"
+                    className="inline-flex items-center gap-2 text-[#065f46] font-bold hover:text-[#f6d274] transition-colors duration-300 group-hover:gap-3"
                 >
                     Read More
                     <ArrowRight className="w-4 h-4" />

@@ -19,7 +19,7 @@ const NavLinks = () => {
                         className={({ isActive }) =>
                             `text-sm font-bold uppercase tracking-wider bg-transparent p-2 rounded-lg transition-all duration-300 ${isActive
                                 ? 'text-[#f6d274]'
-                                : 'text-[#1a365d] hover:text-[#f6d274] hover:bg-gray-50'
+                                : 'text-[#065f46] hover:text-[#f6d274] hover:bg-gray-50'
                             }`
                         }
                     >

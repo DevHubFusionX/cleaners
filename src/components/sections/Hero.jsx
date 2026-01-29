@@ -6,7 +6,7 @@ import heroBg from '../../assets/comtranz/image3.avif';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen overflow-hidden flex items-center bg-[#1a365d]">
+        <section className="relative min-h-screen overflow-hidden flex items-center bg-[#065f46]">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -14,7 +14,7 @@ const Hero = () => {
                     alt="Modern Facility Background"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#1a365d]/95 via-[#1a365d]/80 to-[#1a365d]/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#065f46]/95 via-[#065f46]/80 to-[#065f46]/40"></div>
             </div>
 
             {/* Vertical Social Links - Left Side */}

@@ -18,7 +18,7 @@ const AboutContent = () => {
             </p>
 
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1a365d] leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-6">
                 Your Trusted Facility Management Partner
             </h2>
 
@@ -34,12 +34,12 @@ const AboutContent = () => {
                         key={index}
                         className="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
                     >
-                        <div className="w-8 h-8 rounded-lg bg-[#1a365d] flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-lg bg-[#065f46] flex items-center justify-center">
                             <svg className="w-4 h-4 text-[#f6d274]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                         </div>
-                        <span className="text-[#1a365d] font-semibold text-sm lg:text-base">{value.text}</span>
+                        <span className="text-[#065f46] font-semibold text-sm lg:text-base">{value.text}</span>
                     </div>
                 ))}
             </div>

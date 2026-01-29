@@ -29,7 +29,7 @@ const Services = () => {
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <pattern id="dotted-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                            <circle cx="2" cy="2" r="1" fill="#1a365d" />
+                            <circle cx="2" cy="2" r="1" fill="#065f46" />
                         </pattern>
                     </defs>
                     <rect width="100%" height="100%" fill="url(#dotted-grid)" />
@@ -46,7 +46,7 @@ const Services = () => {
                             <span className="w-8 h-0.5 bg-[#f6d274]"></span>
                             What We Provide
                         </p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1a365d] leading-tight mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-6">
                             Facility Management Services
                         </h2>
                         <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-8">

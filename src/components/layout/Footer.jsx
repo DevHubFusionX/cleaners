@@ -13,7 +13,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#1a365d] pt-20 text-white relative overflow-hidden">
+        <footer className="bg-[#065f46] pt-20 text-white relative overflow-hidden">
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
@@ -106,7 +106,7 @@ const Footer = () => {
                                     placeholder="Your email address"
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm focus:outline-none focus:border-[#f6d274] transition-colors"
                                 />
-                                <button className="absolute right-2 top-2 bottom-2 bg-[#f6d274] hover:bg-[#e5c163] text-[#1a365d] rounded-lg px-4 flex items-center justify-center transition-colors">
+                                <button className="absolute right-2 top-2 bottom-2 bg-[#f6d274] hover:bg-[#e5c163] text-[#065f46] rounded-lg px-4 flex items-center justify-center transition-colors">
                                     <Send className="w-5 h-5" />
                                 </button>
                             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                                 <a
                                     key={social.name}
                                     href={social.url}
-                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#f6d274] hover:text-[#1a365d] hover:-translate-y-1 transition-all duration-300 group"
+                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#f6d274] hover:text-[#065f46] hover:-translate-y-1 transition-all duration-300 group"
                                 >
                                     <span className="sr-only">{social.name}</span>
                                     <social.icon className="w-5 h-5 opacity-70 group-hover:opacity-100" />

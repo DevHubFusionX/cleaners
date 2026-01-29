@@ -54,11 +54,11 @@ const Testimonials = () => {
     }, [nextSlide]);
 
     return (
-        <section className="py-24 lg:py-32 bg-[#1a365d] relative overflow-hidden">
+        <section className="py-24 lg:py-32 bg-[#065f46] relative overflow-hidden">
             {/* Background Decorations */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
                 <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#f6d274] rounded-full blur-[120px]"></div>
-                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-blue-400 rounded-full blur-[100px]"></div>
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-emerald-400 rounded-full blur-[100px]"></div>
             </div>
 
             <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -98,7 +98,7 @@ const Testimonials = () => {
                                                 />
                                             </div>
                                             <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 bg-[#f6d274] p-1.5 sm:p-2 rounded-lg sm:rounded-xl shadow-lg">
-                                                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-[#1a365d] fill-current" />
+                                                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-[#065f46] fill-current" />
                                             </div>
                                         </div>
 
@@ -126,13 +126,13 @@ const Testimonials = () => {
                     <div className="flex justify-center mt-8 sm:mt-12 gap-4 sm:gap-6">
                         <button
                             onClick={prevSlide}
-                            className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-[#f6d274] hover:text-[#1a365d] hover:border-[#f6d274] transition-all duration-300 transform active:scale-95 group"
+                            className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-[#f6d274] hover:text-[#065f46] hover:border-[#f6d274] transition-all duration-300 transform active:scale-95 group"
                         >
                             <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
                         </button>
                         <button
                             onClick={nextSlide}
-                            className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-[#f6d274] hover:text-[#1a365d] hover:border-[#f6d274] transition-all duration-300 transform active:scale-95 group"
+                            className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-[#f6d274] hover:text-[#065f46] hover:border-[#f6d274] transition-all duration-300 transform active:scale-95 group"
                         >
                             <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
                         </button>

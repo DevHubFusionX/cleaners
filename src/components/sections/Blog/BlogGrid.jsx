@@ -38,8 +38,8 @@ const BlogGrid = () => {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 ${activeCategory === category
-                                    ? 'bg-[#1a365d] text-white shadow-lg scale-105'
-                                    : 'bg-white text-gray-700 hover:bg-gray-100 shadow'
+                                ? 'bg-[#065f46] text-white shadow-lg scale-105'
+                                : 'bg-white text-gray-700 hover:bg-gray-100 shadow'
                                 }`}
                         >
                             {category}

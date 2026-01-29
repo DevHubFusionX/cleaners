@@ -9,8 +9,8 @@ const ContactInfo = () => {
             title: "Our Location",
             content: companyInfo.address,
             link: "https://maps.google.com/?q=" + encodeURIComponent(companyInfo.address),
-            color: "text-blue-500",
-            bg: "bg-blue-50"
+            color: "text-emerald-500",
+            bg: "bg-emerald-50"
         },
         {
             icon: Phone,
@@ -52,7 +52,7 @@ const ContactInfo = () => {
                             <div className={`w-16 h-16 ${item.bg} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                 <item.icon className={`w-8 h-8 ${item.color}`} />
                             </div>
-                            <h3 className="text-xl font-bold text-[#1a365d] mb-3">{item.title}</h3>
+                            <h3 className="text-xl font-bold text-[#065f46] mb-3">{item.title}</h3>
                             {item.link ? (
                                 <a
                                     href={item.link}

@@ -31,7 +31,7 @@ const ServicesGrid = () => {
                         What We Offer
                         <span className="w-8 h-0.5 bg-[#f6d274]"></span>
                     </p>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1a365d] leading-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-6">
                         Comprehensive Facility Management Solutions
                     </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">

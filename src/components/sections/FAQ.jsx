@@ -35,7 +35,7 @@ const FAQ = () => {
                             <span className="w-8 h-0.5 bg-[#f6d274]"></span>
                             Common Questions
                         </p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1a365d] leading-tight mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#065f46] leading-tight mb-6">
                             Frequency Asked <br /> Questions
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -43,13 +43,13 @@ const FAQ = () => {
                         </p>
 
                         {/* Static Help Card */}
-                        <div className="bg-[#1a365d] rounded-2xl p-8 text-white relative overflow-hidden group">
+                        <div className="bg-[#065f46] rounded-2xl p-8 text-white relative overflow-hidden group">
                             <div className="relative z-10">
                                 <h4 className="text-xl font-bold mb-2">Still have questions?</h4>
                                 <p className="text-gray-300 text-sm mb-6">Our team is ready to help you with anything you need.</p>
                                 <a
                                     href="tel:+2348038102340"
-                                    className="inline-flex items-center gap-2 bg-[#f6d274] text-[#1a365d] px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform duration-300"
+                                    className="inline-flex items-center gap-2 bg-[#f6d274] text-[#065f46] px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform duration-300"
                                 >
                                     Contact Support
                                 </a>

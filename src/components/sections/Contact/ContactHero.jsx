@@ -4,7 +4,7 @@ import bgImage from '../../../assets/comtranz/image11.avif';
 
 const ContactHero = () => {
     return (
-        <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-[#1a365d] overflow-hidden">
+        <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-[#065f46] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -12,7 +12,7 @@ const ContactHero = () => {
                     alt="Contact Us"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#1a365d]/85"></div>
+                <div className="absolute inset-0 bg-[#065f46]/85"></div>
             </div>
 
             {/* Background Decorations */}
