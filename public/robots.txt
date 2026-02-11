@@ -1,0 +1,8 @@
+# Comtranz Global Facility Management
+# https://www.comtranzglobal.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.comtranzglobal.com/sitemap.xml

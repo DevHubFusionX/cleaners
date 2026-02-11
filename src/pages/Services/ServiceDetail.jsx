@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { services } from '../../data/servicesData';
 import { CheckCircle2, Phone, Mail, ArrowLeft, Shield, Clock, Award } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 // Map service IDs to specific icons or background images if desired
 const serviceMeta = {
@@ -29,14 +30,64 @@ const ServiceDetail = () => {
 
     const Icon = serviceMeta[id]?.icon || Shield;
 
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": service.title,
+        "description": service.description,
+        "provider": {
+            "@type": "Organization",
+            "name": "Comtranz Global Facility Management",
+            "url": "https://www.comtranzglobal.com",
+            "telephone": "+234-803-810-2340"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Nigeria"
+        },
+        "url": `https://www.comtranzglobal.com/services/${service.id}`
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.comtranzglobal.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.comtranzglobal.com/services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": service.title,
+                "item": `https://www.comtranzglobal.com/services/${service.id}`
+            }
+        ]
+    };
+
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title={service.title}
+                description={service.description}
+                path={`/services/${service.id}`}
+                structuredData={[serviceSchema, breadcrumbSchema]}
+            />
+
             {/* Header / Hero */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-[#315347] overflow-hidden text-center text-white">
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <nav className="flex justify-center items-center gap-2 text-sm font-medium text-gray-400 mb-6" data-aos="fade-up">
+                    <nav className="flex justify-center items-center gap-2 text-sm font-medium text-gray-400 mb-6" aria-label="Breadcrumb" data-aos="fade-up">
                         <Link to="/" className="hover:text-[#f6d274] transition-colors">Home</Link>
-                        <ArrowLeft className="w-3 h-3 rotate-180" />
+                        <ArrowLeft className="w-3 h-3 rotate-180" aria-hidden="true" />
                         <Link to="/services" className="hover:text-[#f6d274] transition-colors">Services</Link>
                     </nav>
                     <h1 className="text-4xl md:text-6xl font-black mb-6" data-aos="fade-up">
@@ -59,7 +110,7 @@ const ServiceDetail = () => {
                             <div className="md:col-span-2" data-aos="fade-right">
                                 <h2 className="text-3xl font-black text-[#315347] mb-6">Overview</h2>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                                    Our {service.title} provides specialized solutions tailored to your specific requirements. We pride ourselves on delivering high-quality, reliable, and cost-effective services across Nigeria.
+                                    {service.description}
                                 </p>
                                 <h3 className="text-xl font-bold text-[#315347] mb-4">Key Features</h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

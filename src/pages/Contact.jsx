@@ -1,7 +1,37 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import ContactHero from '../components/sections/Contact/ContactHero';
 import ContactInfo from '../components/sections/Contact/ContactInfo';
 import ContactForm from '../components/sections/Contact/ContactForm';
+
+const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Comtranz Global Facility Management",
+    "url": "https://www.comtranzglobal.com",
+    "telephone": "+234-803-810-2340",
+    "email": "comtranzcgc@gmail.com",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+234-803-810-2340",
+            "contactType": "Customer Service",
+            "areaServed": "NG",
+            "availableLanguage": "English"
+        },
+        {
+            "@type": "ContactPoint",
+            "email": "info@comtranzglobal.com",
+            "contactType": "General Inquiry"
+        }
+    ]
+};
 
 const Contact = () => {
     useEffect(() => {
@@ -10,16 +40,18 @@ const Contact = () => {
 
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title="Contact Us"
+                description="Get in touch with Comtranz Global Facility Management. Request a quote, schedule a consultation, or reach our Lagos office for premium facility management services across Nigeria."
+                path="/contact"
+                structuredData={contactSchema}
+            />
             <ContactHero />
             <ContactInfo />
             <ContactForm />
 
             {/* Map Section Placeholder */}
             <section className="h-[400px] md:h-[500px] bg-gray-200 relative">
-                {/* 
-                    Integrate Google Maps iframe here if needed. 
-                    For now, a clean placeholder with instructions.
-                */}
                 <div className="absolute inset-0 flex items-center justify-center bg-[#315347]/5">
                     <div className="text-center p-8">
                         <div className="w-16 h-16 bg-[#315347] rounded-full flex items-center justify-center mx-auto mb-4">

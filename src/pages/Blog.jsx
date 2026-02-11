@@ -1,7 +1,33 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import BlogHero from '../components/sections/Blog/BlogHero';
 import BlogGrid from '../components/sections/Blog/BlogGrid';
 import { Mail } from 'lucide-react';
+import { blogPosts } from '../data/blogData';
+
+const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Comtranz Global Blog",
+    "description": "Expert insights on facility management, cleaning best practices, maintenance tips, and industry trends in Nigeria.",
+    "url": "https://www.comtranzglobal.com/blog",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Comtranz Global Facility Management",
+        "url": "https://www.comtranzglobal.com"
+    },
+    "blogPost": blogPosts.map(post => ({
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt,
+        "datePublished": post.date,
+        "author": {
+            "@type": "Person",
+            "name": post.author
+        },
+        "url": `https://www.comtranzglobal.com/blog/${post.id}`
+    }))
+};
 
 const Blog = () => {
     useEffect(() => {
@@ -10,6 +36,12 @@ const Blog = () => {
 
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title="Blog | Facility Management Insights"
+                description="Stay informed with expert articles on facility management, cleaning best practices, maintenance tips, pest control, landscaping, and sustainability in Nigeria."
+                path="/blog"
+                structuredData={blogSchema}
+            />
             <BlogHero />
             <BlogGrid />
 
@@ -35,6 +67,7 @@ const Blog = () => {
                                         placeholder="Enter your email address"
                                         className="flex-grow px-6 py-4 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#f6d274]"
                                         required
+                                        aria-label="Email address for newsletter subscription"
                                     />
                                     <button
                                         type="submit"

@@ -1,8 +1,35 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import ServicesHero from '../components/sections/Services/ServicesHero';
 import ServicesGrid from '../components/sections/Services/ServicesGrid';
 import { Link } from 'react-router-dom';
 import { Phone, Mail } from 'lucide-react';
+import { services } from '../data/servicesData';
+
+const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Comtranz Global Facility Management Services",
+    "description": "Comprehensive facility management services offered by Comtranz Global in Nigeria.",
+    "itemListElement": services.map((service, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+            "@type": "Service",
+            "name": service.title,
+            "description": service.description,
+            "provider": {
+                "@type": "Organization",
+                "name": "Comtranz Global Facility Management"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Nigeria"
+            },
+            "url": `https://www.comtranzglobal.com/services/${service.id}`
+        }
+    }))
+};
 
 const Services = () => {
     useEffect(() => {
@@ -11,6 +38,12 @@ const Services = () => {
 
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title="Our Services"
+                description="Explore Comtranz Global's comprehensive facility management services in Nigeria — including maintenance, cleaning, landscaping, security, pest control, and consultancy."
+                path="/services"
+                structuredData={servicesSchema}
+            />
             <ServicesHero />
             <ServicesGrid />
 

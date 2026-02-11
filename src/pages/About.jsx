@@ -1,9 +1,36 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import AboutHero from '../components/sections/About/AboutHero';
 import AboutMain from '../components/sections/About/AboutMain';
 import MissionVision from '../components/sections/About/MissionVision';
 import ValuesGrid from '../components/sections/About/ValuesGrid';
 import { Link } from 'react-router-dom';
+
+const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Comtranz Global Facility Management",
+    "url": "https://www.comtranzglobal.com",
+    "logo": "https://www.comtranzglobal.com/favicon.ico",
+    "foundingDate": "2018",
+    "founder": {
+        "@type": "Person",
+        "name": "Festus Alase"
+    },
+    "description": "Nigeria's most trusted and innovative provider of integrated facility management solutions, enabling sustainable and efficient environments across residential, commercial, and institutional properties.",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-803-810-2340",
+        "contactType": "Customer Service",
+        "email": "comtranzcgc@gmail.com",
+        "areaServed": "NG"
+    }
+};
 
 const About = () => {
     useEffect(() => {
@@ -12,6 +39,12 @@ const About = () => {
 
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title="About Us"
+                description="Learn about Comtranz Global Facility Management — Nigeria's trusted facility management company founded in 2018. Discover our mission, vision, values, and commitment to excellence in property management."
+                path="/about"
+                structuredData={organizationSchema}
+            />
             <AboutHero />
             <AboutMain />
             <MissionVision />
